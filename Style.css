@@ -1,0 +1,153 @@
+* {
+    margin: 0; /* Elimina el margen por defecto de todos los elementos */
+    padding: 0; /* Elimina el padding por defecto de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total de los elementos */
+}
+
+body {
+    background-color: rgb(48, 93, 114); /* Color de fondo de la página */
+    color: rgb(255, 255, 255); /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente utilizada en el cuerpo de la página */
+}
+
+header {
+    background-color: rgb(0, 0, 0); /* Color de fondo del encabezado */
+    padding: 20px; /* Espaciado interno del encabezado */
+    text-align: center; /* Centra el contenido del encabezado */
+}
+
+#title {
+    margin-bottom: 10px; /* Margen inferior del título */
+}
+
+nav {
+    margin-top: 10px; /* Margen superior del menú de navegación */
+}
+
+nav a {
+    color: rgb(255, 255, 255); /* Color de los enlaces de navegación */
+    margin: 0 15px; /* Margen lateral de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Color de fondo al pasar el mouse sobre el enlace */
+    padding: 10px; /* Espaciado interno al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados al pasar el mouse */
+}
+
+main {
+    padding: 20px; /* Espaciado interno del contenido principal */
+    max-width: 800px; /* Ancho máximo del contenido principal */
+    margin: auto; /* Centra el contenido principal */
+}
+
+section {
+    margin-bottom: 40px; /* Margen inferior entre secciones */
+}
+
+#home {
+    text-align: center; /* Centra el contenido de la sección de inicio */
+}
+
+#my_photo {
+    border-radius: 50%; /* Hace que la imagen del perfil sea circular */
+    width: 150px; /* Ancho de la imagen del perfil */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-top: 10px; /* Margen superior de la imagen */
+}
+
+h2 {
+    margin-bottom: 20px; /* Margen inferior de los encabezados de nivel 2 */
+}
+
+#skills ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding de la lista */
+}
+
+#projects table {
+    width: 100%; /* Ancho completo de la tabla */
+    border-collapse: collapse; /* Colapsa los bordes de la tabla */
+    margin-top: 20px; /* Margen superior de la tabla de proyectos */
+}
+
+#projects table th,
+#projects table td {
+    padding: 10px; /* Espaciado interno de las celdas de la tabla */
+    border: 1px solid #ddd; /* Borde de las celdas de la tabla */
+    text-align: left; /* Alineación del texto a la izquierda en las celdas */
+}
+
+#projects table a {
+    color: rgb(255, 255, 255); /* Color de los enlaces en la tabla */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+#projects table a:hover {
+    color: #000; /* Color del enlace al pasar el mouse */
+}
+
+form {
+    display: flex; /* Utiliza flexbox para el diseño del formulario */
+    flex-direction: column; /* Coloca los elementos del formulario en columna */
+    width: 100%; /* Ancho completo del formulario */
+}
+
+form label {
+    margin: 10px 0 5px; /* Margen para las etiquetas del formulario */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Ancho completo para los campos de entrada y área de texto */
+    padding: 10px; /* Espaciado interno de los campos */
+    margin-bottom: 15px; /* Margen inferior de los campos */
+    border: 1px solid #ddd; /* Borde de los campos */
+    border-radius: 4px; /* Bordes redondeados de los campos */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: auto; /* Ancho automático para los botones */
+    padding: 10px 20px; /* Espaciado interno de los botones */
+    margin-right: 10px; /* Margen derecho de los botones */
+    border: none; /* Sin borde para los botones */
+    border-radius: 4px; /* Bordes redondeados de los botones */
+    background-color: rgb(0, 0, 0); /* Color de fondo de los botones */
+    color: rgb(255, 255, 255); /* Color del texto de los botones */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: rgb(50, 50, 50); /* Color de fondo al pasar el mouse sobre los botones */
+}
+
+#socialmedia {
+    margin-top: 20px; /* Margen superior de la sección de redes sociales */
+    text-align: center; /* Centra el contenido de la sección de redes sociales */
+}
+
+.icon {
+    display: inline-block; /* Muestra los iconos en línea */
+    margin: 0 10px; /* Margen lateral de los iconos */
+}
+
+.icon img {
+    max-width: 30px; /* Ancho máximo de los iconos */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+footer {
+    background-color: rgb(0, 0, 0); /* Color de fondo del pie de página */
+    color: rgb(255, 255, 255); /* Color del texto del pie de página */
+    text-align: center; /* Centra el contenido del pie de página */
+    padding: 10px; /* Espaciado interno del pie de página */
+    position: relative; /* Posicionamiento relativo del pie de página */
+    bottom: 0; /* Posiciona el pie de página en la parte inferior */
+    width: 100%; /* Ancho completo del pie de página */
+}

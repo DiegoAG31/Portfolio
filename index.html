@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Diego Ariza, Portfolio Diego, software developer, DiegoAG31">
+    <meta name="description" content="Portfolio by DiegoAG31, software developer">
+    <meta name="author" content="DiegoAG31">
+
+    <meta name="robots" content="index, follow"> <!-- Indica a los motores de búsqueda que indexen esta página -->
+    <meta name="googlebot" content="googlebot/2.1"> <!-- Información específica para Googlebot -->
+    <meta name="bingbot" content="bingbot/2.0"> <!-- Información específica para Bingbot -->
+    <meta name="referrer" content="no-referrer"> <!-- No enviar información de referencia -->
+    <meta name="X-XSS-Protection" content="1; mode=block"> <!-- Protección contra ataques XSS -->
+
+    <link rel="shortcut icon" href="./imagenes/favicon.webp" type="image/x-icon"> <!-- Icono de la pestaña -->
+    <link rel="stylesheet" href="Style.css"> <!-- Enlace a la hoja de estilos CSS -->
+    <title>Portfolio Diego</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+</head>
+
+<body>
+    <header>
+        <h1 id="title">My Portfolio</h1> <!-- Título principal del portafolio -->
+        <nav>
+            <a href="#home">Home</a> <!-- Enlace a la sección de inicio -->
+            <a href="#about">About me</a> <!-- Enlace a la sección "Sobre mí" -->
+            <a href="#skills">Skills</a> <!-- Enlace a la sección de habilidades -->
+            <a href="#projects">Projects</a> <!-- Enlace a la sección de proyectos -->
+            <a href="#contact">Contact</a> <!-- Enlace a la sección de contacto -->
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Diego Ariza</h2> <!-- Nombre del desarrollador -->
+            <p>Industrial engineer</p> <!-- Profesión -->
+            <img src="./imagenes/perfil.webp" alt="My photo" id="my_photo"> <!-- Foto del perfil -->
+        </section>
+
+        <section id="about">
+            <p>I'm a simple guy who loves videogames. I'm 27 years old and have a bachelor's degree in Industrial</p>
+            <p>However, I'm now studying software development with knowledge in Python language, and some</p>
+            <p>ideas in HTML and CSS.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2> <!-- Título de la sección de habilidades -->
+            <ul>
+                <li>Python</li> <!-- Habilidad en Python -->
+                <li>HTML</li> <!-- Habilidad en HTML -->
+                <li>CSS</li> <!-- Habilidad en CSS -->
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2> <!-- Título de la sección de proyectos -->
+            <table>
+                <tr>
+                    <th>Project Name</th> <!-- Nombre del proyecto -->
+                    <th>Technologies</th> <!-- Tecnologías utilizadas -->
+                    <th>Link</th> <!-- Enlace al proyecto -->
+                </tr>
+
+                <tr>
+                    <th>Inventory System</th> <!-- Nombre del primer proyecto -->
+                    <th>Python</th> <!-- Tecnología utilizada -->
+                    <th><a href="https://github.com/DiegoAG31/Inventory-system-python" target="_blank">Visit</a></th> <!-- Enlace al proyecto -->
+                </tr>
+
+                <tr>
+                    <th>Website</th> <!-- Nombre del segundo proyecto -->
+                    <th>Html y Css</th> <!-- Tecnologías utilizadas -->
+                    <th><a href="https://github.com/DiegoAG31/CSSpractice" target="_blank">Visit</a></th> <!-- Enlace al proyecto -->
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h3>Contact Me</h3> <!-- Título de la sección de contacto -->
+            <div class="form">
+                <form action="#" method="post"> <!-- Formulario de contacto -->
+                    <label for="name">Name: </label> <!-- Etiqueta para el campo de nombre -->
+                    <input type="text" id="name" name="name" required> <!-- Campo de entrada para el nombre -->
+                    <br>
+                                  
+                    <label for="email">Email: </label> <!-- Etiqueta para el campo de correo electrónico -->
+                    <input type="email" id="email" name="email" required> <!-- Campo de entrada para el correo electrónico -->
+                    <br>
+
+                    <label for="message">Message: </label> <!-- Etiqueta para el campo de mensaje -->
+                    <textarea name="message" id="message" rows="4" required></textarea> <!-- Área de texto para el mensaje -->
+                    <br>
+
+                    <input type="submit" value="Send"> <!-- Botón para enviar el formulario -->
+                    <input type="reset" value="Clear"> <!-- Botón para limpiar el formulario -->
+                </form>
+            </div>
+
+            <div id="socialmedia"><p>Socials Media</p> <!-- Título de la sección de redes sociales -->
+                <div class="icon">
+                    <a href="mailto: diegoag3107@gmail.com"><img src="./imagenes/emailicon.webp" alt="Mail icon"></a> <!-- Icono de correo electrónico -->
+                </div>
+                <div class="icon">
+                    <a href="https://github.com/diegoag31" target="_blank"><img src="./imagenes/githubicon.webp" alt="Github icon"></a> <!-- Icono de GitHub -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; DiegoAG31 2025. All rights reserved</p> <!-- Pie de página con derechos de autor -->
+    </footer>
+
+</body>
+
+</html>
