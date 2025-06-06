@@ -1,153 +1,192 @@
+/* reseteo de css */
 * {
-    margin: 0; /* Elimina el margen por defecto de todos los elementos */
-    padding: 0; /* Elimina el padding por defecto de todos los elementos */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total de los elementos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(48, 93, 114); /* Color de fondo de la página */
-    color: rgb(255, 255, 255); /* Color del texto */
-    font-family: Arial, sans-serif; /* Fuente utilizada en el cuerpo de la página */
+/* animacion de cambio de colores del background y configuracion del body */
+body{
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(135deg,
+      #000000,
+      #122c4f,
+      #5b88b2,
+      #fbf9e4
+    );
+    background-size: 400% 400%;
+    animation: fondoMovimiento 15s ease infinite;
+}
+/* animacion del fondo */
+@keyframes fondoMovimiento {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
 }
 
 header {
-    background-color: rgb(0, 0, 0); /* Color de fondo del encabezado */
-    padding: 20px; /* Espaciado interno del encabezado */
-    text-align: center; /* Centra el contenido del encabezado */
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 #title {
-    margin-bottom: 10px; /* Margen inferior del título */
+    margin-bottom: 10px;
 }
 
 nav {
-    margin-top: 10px; /* Margen superior del menú de navegación */
+    margin-top: 10px;
 }
 
 nav a {
-    color: rgb(255, 255, 255); /* Color de los enlaces de navegación */
-    margin: 0 15px; /* Margen lateral de los enlaces */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Color de fondo al pasar el mouse sobre el enlace */
-    padding: 10px; /* Espaciado interno al pasar el mouse */
-    border-radius: 5px; /* Bordes redondeados al pasar el mouse */
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 main {
-    padding: 20px; /* Espaciado interno del contenido principal */
-    max-width: 800px; /* Ancho máximo del contenido principal */
-    margin: auto; /* Centra el contenido principal */
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
 }
 
 section {
-    margin-bottom: 40px; /* Margen inferior entre secciones */
+    margin-bottom: 40px;
 }
 
 #home {
-    text-align: center; /* Centra el contenido de la sección de inicio */
+    text-align: center;
 }
 
+/* se da tamaño a la foto y se suaviza la transicion de la imagen */
 #my_photo {
-    border-radius: 50%; /* Hace que la imagen del perfil sea circular */
-    width: 150px; /* Ancho de la imagen del perfil */
-    height: auto; /* Altura automática para mantener la proporción */
-    margin-top: 10px; /* Margen superior de la imagen */
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    transition: .5s;
+}
+
+/* animacion para hacer crecer la imagen en escala 1.2 cuando se pasa el mouse por encima */
+#my_photo:hover {
+    transform:scale(1.2);
 }
 
 h2 {
-    margin-bottom: 20px; /* Margen inferior de los encabezados de nivel 2 */
+    margin-bottom: 20px;
 }
 
 #skills ul {
-    list-style-type: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el padding de la lista */
+    list-style-type: none;
+    padding: 0;
 }
 
 #projects table {
-    width: 100%; /* Ancho completo de la tabla */
-    border-collapse: collapse; /* Colapsa los bordes de la tabla */
-    margin-top: 20px; /* Margen superior de la tabla de proyectos */
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
 #projects table th,
 #projects table td {
-    padding: 10px; /* Espaciado interno de las celdas de la tabla */
-    border: 1px solid #ddd; /* Borde de las celdas de la tabla */
-    text-align: left; /* Alineación del texto a la izquierda en las celdas */
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
 }
 
 #projects table a {
-    color: rgb(255, 255, 255); /* Color de los enlaces en la tabla */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
+/* pseudoclase para cuando se visite el link cambie el color del texto */
+#projects table a:visited {
+    color: rgb(92, 92, 92);
+}
+
+/* pseudoclase para cambiar el color del texto cuando el mouse esta por encima */
 #projects table a:hover {
-    color: #000; /* Color del enlace al pasar el mouse */
+    color: #000;
 }
 
+/* organizacion del form */
 form {
-    display: flex; /* Utiliza flexbox para el diseño del formulario */
-    flex-direction: column; /* Coloca los elementos del formulario en columna */
-    width: 100%; /* Ancho completo del formulario */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 form label {
-    margin: 10px 0 5px; /* Margen para las etiquetas del formulario */
+    margin: 10px 0 5px;
 }
+
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%; /* Ancho completo para los campos de entrada y área de texto */
-    padding: 10px; /* Espaciado interno de los campos */
-    margin-bottom: 15px; /* Margen inferior de los campos */
-    border: 1px solid #ddd; /* Borde de los campos */
-    border-radius: 4px; /* Bordes redondeados de los campos */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 input[type="submit"],
 input[type="reset"] {
-    width: auto; /* Ancho automático para los botones */
-    padding: 10px 20px; /* Espaciado interno de los botones */
-    margin-right: 10px; /* Margen derecho de los botones */
-    border: none; /* Sin borde para los botones */
-    border-radius: 4px; /* Bordes redondeados de los botones */
-    background-color: rgb(0, 0, 0); /* Color de fondo de los botones */
-    color: rgb(255, 255, 255); /* Color del texto de los botones */
-    cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
-    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+    width: auto;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-    background-color: rgb(50, 50, 50); /* Color de fondo al pasar el mouse sobre los botones */
+    background-color: rgb(50, 50, 50);
+}
+
+/* pseudoelemento para modificar los placeholders */
+::placeholder {
+    color: black;
 }
 
 #socialmedia {
-    margin-top: 20px; /* Margen superior de la sección de redes sociales */
-    text-align: center; /* Centra el contenido de la sección de redes sociales */
+    margin-top: 20px;
+    text-align: center;
 }
 
 .icon {
     display: inline-block; /* Muestra los iconos en línea */
-    margin: 0 10px; /* Margen lateral de los iconos */
+    margin: 0 10px;
 }
 
 .icon img {
     max-width: 30px; /* Ancho máximo de los iconos */
-    height: auto; /* Altura automática para mantener la proporción */
+    height: auto;
 }
 
 footer {
-    background-color: rgb(0, 0, 0); /* Color de fondo del pie de página */
-    color: rgb(255, 255, 255); /* Color del texto del pie de página */
-    text-align: center; /* Centra el contenido del pie de página */
-    padding: 10px; /* Espaciado interno del pie de página */
-    position: relative; /* Posicionamiento relativo del pie de página */
-    bottom: 0; /* Posiciona el pie de página en la parte inferior */
-    width: 100%; /* Ancho completo del pie de página */
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
